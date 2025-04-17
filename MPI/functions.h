@@ -8,6 +8,7 @@
 
 #include <climits>
 
+
 void checkResult(double* augmentedMatrix, double* roots, int n) {
     const double E = 1e-8;  // Convergence threshold
     int numberConverged = 0;
@@ -31,7 +32,7 @@ void checkResult(double* augmentedMatrix, double* roots, int n) {
         }
     }
 
-    std::cout << endl << "Number of Converged Equations: " << numberConverged
+    std::cout << std::endl << "Number of Converged Equations: " << numberConverged
               << " | Total Deviation: " << deviation << std::endl;
 }
 
